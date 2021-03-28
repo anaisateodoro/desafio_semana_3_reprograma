@@ -1,0 +1,30 @@
+<html>
+    <script>
+/* DESAFIO 
+//EXERCICIO DE FUNCAO:*/
+
+/* Elabore um programa que leia a velocidade permitida em uma estrada e a velocidade de um condutor.
+Se a velocidade for inferior ou igual a velocidade permitida, exiba a mensagem "Sem Multa". Se a velocidade for de até 10% maior que a permitida,
+exiba "Multa Leve". E, se a velocidade for superior a 20% da velocidade permitida, exiba "Multa Grave.
+
+"DESAFIO DE REPETIÇAO e FUNCAO*/
+function exercicioValidarMulta (){
+let velopermitida = parseFloat(prompt("Digite a velocidade da pista:"));
+let velomotorista = parseFloat(prompt("Digite a velocidade do motorista:"));
+let leve = velopermitida*0.1;
+let grave = velomotorista*0.2;
+if(velopermitida >= velomotorista ){
+   document.writeln("Sem multa!");
+}
+else if (velomotorista< (velopermitida+leve)){
+    document.writeln("O motorista levará uma MULTA LEVE")
+}
+else{
+    document.writeln("O motorista levará uma MULTA GRAVE")
+}
+    
+    }
+exercicioValidarMulta ();
+
+    </script>
+</html>
